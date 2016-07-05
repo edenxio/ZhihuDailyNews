@@ -1,5 +1,10 @@
 <resources>
     <string name="app_name">ZhihuDailyNews</string>
-    <string name="action_star">Star</string>
-    <string name="action_setting">Setting</string>
+    <string name="action_favorite">Favorites</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="favorite_button">favorite</string>
+    <string name="action_clean">clear data</string>
+    <string name="action_download">Offline News</string>
+
+
 </resources>

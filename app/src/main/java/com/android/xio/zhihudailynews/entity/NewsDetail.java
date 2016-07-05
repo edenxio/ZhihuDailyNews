@@ -14,10 +14,11 @@ public class NewsDetail implements Serializable{
     private String share_url;
     private ArrayList<String> images;
     private String ga_prefix;
-    private long id;
+    private int id;
     private int type;
+    public NewsDetail(){}
 
-    public NewsDetail(String body, String image, String image_source, String title, String share_url, ArrayList<String> images, String ga_prefix, long id, String css, int type) {
+    public NewsDetail(String body, String image, String image_source, String title, String share_url, ArrayList<String> images, String ga_prefix, int id, String css, int type) {
         this.body = body;
         this.image = image;
         this.image_source = image_source;
@@ -88,7 +89,7 @@ public class NewsDetail implements Serializable{
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(int id) {
         this.id = id;
     }
 

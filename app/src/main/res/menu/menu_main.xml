@@ -5,12 +5,16 @@
     tools:context=".activity.MainActivity">
 <item
     android:id="@+id/action_favourite"
-    app:showAsAction="always"
-    tools:ignore=",AppCompatResource"
-    android:title="@string/action_star"></item>
+    app:showAsAction="never"
+    android:title="@string/action_favorite"></item>
+
     <item
-        android:id="@+id/action_setting"
+        android:id="@+id/action_clean"
         app:showAsAction="never"
-        tools:ignore=",AppCompatResource"
-        android:title="@string/action_setting"></item>
+        android:title="@string/action_clean"></item>
+    <item
+        android:id="@+id/action_download"
+        android:title="@string/action_download"
+        app:showAsAction="never"
+        ></item>
 </menu>

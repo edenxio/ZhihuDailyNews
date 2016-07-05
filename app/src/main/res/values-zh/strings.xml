@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">知乎日报社</string>
+    <string name="action_favorite" translatable="false">收藏夹</string>
+    <string name="favorite_button">收藏 </string>
+    <string name="action_clean">清除缓存</string>
+    <string name="action_download">离线所有内容</string>
+</resources>

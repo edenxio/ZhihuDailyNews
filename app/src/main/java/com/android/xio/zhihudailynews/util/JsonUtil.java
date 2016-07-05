@@ -3,6 +3,8 @@ package com.android.xio.zhihudailynews.util;
 /**
  * Created by Xio on 2016/6/27.
  */
+import com.android.xio.zhihudailynews.ZhihuDailyNewsApplication;
+import com.android.xio.zhihudailynews.db.NewsListDB;
 import com.android.xio.zhihudailynews.entity.News;
 import com.android.xio.zhihudailynews.entity.NewsDetail;
 import com.google.gson.Gson;
@@ -28,6 +30,10 @@ public class JsonUtil {
                 image =(String) newsInJson.getJSONArray("images").get(0);
             }
             News news = new News(id,title,image);
+            //将数据添加到数据库
+            if(!NewsListDB.getInstance(ZhihuDailyNewsApplication.getContext()).isExist(news)){
+                NewsListDB.getInstance(ZhihuDailyNewsApplication.getContext()).saveNewsList(news);
+            }
             newsList.add(news);
         }
         return newsList;
